@@ -45,7 +45,7 @@ class Signup extends React.Component{
   };
     render(){
         return(
-            <div>
+            <div className="main-sign">
               <center>
                <form className="signup">
       <div className="form-group signin">
@@ -68,9 +68,10 @@ class Signup extends React.Component{
       <button type="submit" onClick={this.handleSubmit} className="btn btn-primary btsign">Sign Up</button>
     </form>
     {/* <Link to="/emailverification">Verify Email</Link> */}
-    <UploadImage className="upload"/>
-    <p>Already a member<span><Link  to="/signin"> sign in</Link></span></p>
+    <p>Already a member ? <span><Link  to="/signin"> sign in</Link></span></p>
     </center>
+    <UploadImage className="upload"/>
+
             </div>
         )
     }

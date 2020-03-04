@@ -37,7 +37,7 @@ render() {
                             <input type="file" onChange={this.handleFileChange}/>
                         </div>
                         <div className="form-group">
-                            <button className="btn btn-primary" type="submit">Upload</button>
+                            <button className="btn btn-primary pic " type="submit">Add profile pic</button>
                         </div>
                     </form>
                 </div>
