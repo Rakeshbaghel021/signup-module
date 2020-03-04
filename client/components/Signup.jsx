@@ -67,7 +67,7 @@ class Signup extends React.Component{
       </div>
       <button type="submit" onClick={this.handleSubmit} className="btn btn-primary btsign">Sign Up</button>
     </form>
-    {/* <Link to="/emailverification">Verify Email</Link> */}
+    <Link to="/emailverification">Verify Email</Link>
     <p>Already a member ? <span><Link  to="/signin"> sign in</Link></span></p>
     </center>
     <UploadImage className="upload"/>
