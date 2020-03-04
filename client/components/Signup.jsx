@@ -46,29 +46,31 @@ class Signup extends React.Component{
     render(){
         return(
             <div>
-               <form>
+              <center>
+               <form className="signup">
       <div className="form-group signin">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" className="form-control" id="exampleInputEmail1" placeholder="Email" name="email" value={this.state.email} onChange={this.handleChange} aria-describedby="emailHelp"/>
-        {/* <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small> */}
+       
+        <input type="email" className="form-control em" id="exampleInputEmail1" placeholder="Email" name="email" value={this.state.email} onChange={this.handleChange} aria-describedby="emailHelp"/>
+        
       </div>
-      <div className="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" className="form-control" placeholder="Password" name="password" value={this.state.password} onChange={this.handleChange} id="exampleInputPassword1"/>
+      <div className="form-group signin">
+      
+        <input type="password" className="form-control em" placeholder="Password" name="password" value={this.state.password} onChange={this.handleChange} id="exampleInputPassword1"/>
       </div>
-      <label for="exampleInputEmail1">Name</label>
+    
 
-      <input type="email" className="form-control" id="exampleInputEmail1" placeholder="username" name="username" value={this.state.username} onChange={this.handleChange} aria-describedby="emailHelp"/>
+      <input type="email" className="form-control signin em" id="exampleInputEmail1" placeholder="Full name" name="username" value={this.state.username} onChange={this.handleChange} aria-describedby="emailHelp"/>
 
-      <div className="form-group form-check">
+      <div className="form-group form-check signin">
         <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
-        <label className="form-check-label" for="exampleCheck1">I agree to all terms and conditions</label>
+        <label className="form-check-label ch" for="exampleCheck1">I agree to all terms and conditions</label>
       </div>
-      <button type="submit" onClick={this.handleSubmit} className="btn btn-primary">Submit</button>
+      <button type="submit" onClick={this.handleSubmit} className="btn btn-primary btsign">Sign Up</button>
     </form>
-    <Link to="/emailverification">Verify Email</Link>
-    <UploadImage />
+    {/* <Link to="/emailverification">Verify Email</Link> */}
+    <UploadImage className="upload"/>
     <p>Already a member<span><Link  to="/signin"> sign in</Link></span></p>
+    </center>
             </div>
         )
     }

@@ -4,5 +4,33 @@ form{
     
 }
 .signin{
-   width: 70%;
+   width: 40%;
+}
+.si{
+    margin-top:10rem;
+}
+.em,.pass{
+    border-radius: 5px;
+    height: 2rem;
+    border:1px solid grey;
+    
+}
+.btsign{
+    margin-top: 2rem;
+    background-color: #66D6B3;
+    color:white;
+    border:none;
+    box-shadow: 0 8px 6px -6px black;
+    margin-bottom: 2rem;width: 10%;
+}
+.up{
+    
+    color: #66D6B3;
+}
+.signup{
+    margin-top: 5rem;
+}
+.ch{
+    color:grey;
+    
 }

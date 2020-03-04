@@ -43,21 +43,21 @@ class Signin extends React.Component{
     render(){
         return(
             <div>
-               <form onSubmit={this.handleSubmit}>
+              <center>
+               <form className="si" onSubmit={this.handleSubmit}>
       <div className="form-group signin">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" className="form-control" id="exampleInputEmail1" name="email" value={this.state.email} onChange={this.handleChange} placeholder="Email" aria-describedby="emailHelp"/>
+        <input type="email" className="form-control em" name="email" value={this.state.email} onChange={this.handleChange} placeholder="Email" aria-describedby="emailHelp"/>
       </div>
-      <div className="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" className="form-control" placeholder="Password" name="password" value={this.state.password} onChange={this.handleChange} id="exampleInputPassword1"/>
+      <div className="form-group signin">
+        <input type="password" className="form-control pass" placeholder="Password" name="password" value={this.state.password} onChange={this.handleChange} />
         <small id="emailHelp" className="form-text text-muted">forgot password ?</small>
         
       </div>
      
-      <button type="submit" className="btn btn-primary">Sign in</button>
+      <button type="submit" className="btn btn-primary btsign">Sign in</button>
     </form>
-    <p>New to the site <span><Link  to="/">sign up</Link></span></p>
+    <p className="new">New to the site ? <span className="up"><Link  to="/">sign up</Link></span></p>
+    </center>
             </div>
         )
     }

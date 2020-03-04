@@ -47,7 +47,7 @@ class App extends React.Component{
                 <EmailVerification />
               </Route>
               <Route exact path="/">
-                <Signup/>
+                <Signup className="signupp"/>
               </Route>
           </Switch>
         );
